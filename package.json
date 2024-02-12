@@ -1,0 +1,40 @@
+{
+  "name": "02-api-restfull",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "convert:js": "npx tsc src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.7.0",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.50.0",
+    "supertest": "^6.3.4",
+    "tsup": "^8.0.2",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "dotenv": "^16.3.2",
+    "fastify": "^4.23.2",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6",
+    "zod": "^3.22.4"
+  }
+}
